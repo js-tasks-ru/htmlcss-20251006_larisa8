@@ -1,0 +1,60 @@
+body, h1, h2, ul, ol {
+  margin: 0;
+}
+
+body {
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  background: red;
+  font-size: 3em;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.7em;
+}
+
+nav {
+  padding: 10px 0;
+  background: orange;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 5px;
+  color: white;
+  font-size: 1.5em;
+}
+
+main {
+  padding: 10px  10px 15px 10px;
+  background: green;
+}
+
+article {
+  margin: 0 0 5px;
+  padding: 40px 10px 30px;
+  background: blue;
+}
+
+ul, ol {
+  margin: 20px 0 0 0;
+  padding-left: 25px;
+  line-height: 1.3em;
+}
+
+article:last-child {
+  margin: 0;
+}
+
+footer {
+  background: darkviolet;
+  text-align: center;
+  font-size: 3em;
+}
