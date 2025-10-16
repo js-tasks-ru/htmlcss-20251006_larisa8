@@ -1,12 +1,12 @@
 .footer {
-  padding: 71px 20px 136px 20px;
+  padding: 71px 0 136px 0;
   background-color: var(--white);
   border-top: 1px solid var(--grey-2);
   font-family: 'Inter', sans-serif;
 }
 
 .footer__content {
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
