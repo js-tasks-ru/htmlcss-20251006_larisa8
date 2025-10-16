@@ -16,6 +16,7 @@
 .button:not(:disabled):hover,
 .button:not(:disabled):active {
   background-color: var(--blue-1);
+  cursor: pointer;
 }
 
 .button_secondary {
