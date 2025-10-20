@@ -28,8 +28,6 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
-
-    --padding-left-content: 160px;
 }
 
 html, body {
