@@ -2,8 +2,11 @@
 @import '../fonts/fonts.css';
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';
-@import '../../components/main/main.css';
+@import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
+@import '../../components/container/container.css';
+@import '../../components/card-grid/card-grid.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
