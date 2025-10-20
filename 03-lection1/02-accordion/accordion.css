@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
 .accordion {
-  --padding-vertical: 24px;
-  --padding-side: 32px;
+  --padding: 32px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -21,13 +20,13 @@
 }
 
 .accordion__summary {
-  padding: var(--padding-vertical) var(--padding-side);
+  padding: 24px var(--padding) var(--padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.accordion__summary ::marker { 
+.accordion__summary::marker { 
   content: '';
 }
 
@@ -40,7 +39,7 @@
 }
 
 .accordion__content {
-  padding: 0 var(--padding-side) var(--padding-vertical);
+  padding: 0 var(--padding) var(--padding);
   margin: 16px 0 0 0;
   color: var(--grey-4);
 }
