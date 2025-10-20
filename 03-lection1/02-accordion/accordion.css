@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .accordion__summary {
@@ -16,7 +17,7 @@
   align-items: center;
 }
 
-.accordion__summary::marker { 
+.accordion__summary ::marker { 
   content: '';
 }
 
@@ -28,13 +29,9 @@
   background-image: url('../../assets/images/arrow.svg');
 }
 
-.accordion__item { 
+.accordion__content {
   color: var(--grey-4);
-  margin: 16px 0 8px 0;
-}
-
-.accordion__item + .accordion__item {
-  margin: 8px 0 0 0;   
+  margin: 16px 0 0 0;
 }
 
 .accordion__item:last-child {
