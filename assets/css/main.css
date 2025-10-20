@@ -4,6 +4,8 @@
 @import '../../components/header/header.css';
 @import '../../components/main/main.css';
 @import '../../components/footer/footer.css';
+@import '../../components/card-grid/card-grid.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -23,6 +25,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --padding-left-content: 160px;
 }
 
 html, body {
