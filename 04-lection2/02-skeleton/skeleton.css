@@ -14,15 +14,12 @@
   margin: 0 0 24px 0;
 }
 
-.skeleton__header-circle {
-  flex: 0 auto;
-}
-
 .skeleton__header-bars {
   flex: 1;
 }
 
 .skeleton__circle {
+  flex: 0 auto;
   width: 64px;
   height: 64px;
   border-radius: 50%;
