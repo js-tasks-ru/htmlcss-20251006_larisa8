@@ -21,7 +21,7 @@
   font-family: 'Inter', sans-serif;
   line-height: 24px;
   max-height: 80vh;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .modal__close {
