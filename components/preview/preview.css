@@ -1,4 +1,10 @@
 .preview {
   padding: 68px 0 204px;
   background-color: var(--grey-5);
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.preview_no-border {
+  border: none;
 }
