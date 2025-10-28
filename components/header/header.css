@@ -1,8 +1,11 @@
 .header {
   padding: 96px 5px 77px;
   background-color: var(--white);
-  border-bottom: 1px solid var(--grey-2);
   font-family: 'Inter', sans-serif;
+}
+
+.header_transparent {
+  background-color: transparent;
 }
 
 .header__title {

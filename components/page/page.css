@@ -11,3 +11,17 @@
 .page__preview {
   flex: 1;
 }
+
+.page_inner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background-color: var(--grey-5);
+}
+
+.page__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
+  height: 100%;
+}

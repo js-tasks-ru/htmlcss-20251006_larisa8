@@ -1,8 +1,11 @@
 .footer {
   padding: 71px 0 136px 0;
   background-color: var(--white);
-  border-top: 1px solid var(--grey-2);
   font-family: 'Inter', sans-serif;
+}
+
+.footer_transparent {
+  background-color: transparent;
 }
 
 .footer__content {
@@ -23,4 +26,13 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.footer__uppercase-header {
+  color: var(--grey-3);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 } 
