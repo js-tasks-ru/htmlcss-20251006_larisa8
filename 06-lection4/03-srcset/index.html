@@ -6,9 +6,18 @@
         <link rel="stylesheet" href="./srcset.css">
     </head>
     <body>
-        <picture class="srcset">
-            <source media="(min-width: 768px)" srcset="./public/forest_768.jpg 2x">
-            <img src="./public/forest_400.jpg" srcset="./public/forest_400.jpg" alt="forest" class="srcset__img">
-        </picture>
+        <div class="srcset">
+            <img 
+                alt="forest"
+                class="srcset__img"
+                src="./public/forest_400.jpg"
+                srcset="./public/forest_768.jpg 2x"
+                sizes="
+                    (max-width: 1000px) 768px,
+                    400px
+                "
+            >
+            
+            </div>
     </body>
 </html>
