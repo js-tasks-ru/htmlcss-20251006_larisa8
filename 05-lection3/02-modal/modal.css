@@ -34,6 +34,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+  color: var(--grey-4);
 }
 
 .modal__header {
