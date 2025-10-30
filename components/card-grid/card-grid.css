@@ -1,7 +1,7 @@
 .card-grid {
   display: flex;
   flex-flow: row wrap;
-  gap: 23px 16px;
+  gap: 16px;
   justify-content: center;
 }
 
