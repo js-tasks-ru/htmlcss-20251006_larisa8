@@ -1,5 +1,12 @@
 .card-grid {
   display: flex;
   flex-flow: row wrap;
-  gap: 30px;
+  gap: 23px 16px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-grid {
+    gap: 30px;
+  }
 }
