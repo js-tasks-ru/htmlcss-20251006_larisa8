@@ -30,12 +30,10 @@
   content: '';
 }
 
-.accordion__summary::after {
-  content: '';
-  display: inline-block;
+.accordion__arrow {
   width: 18px;
   height: 10px;
-  background-image: url('../../assets/images/arrow.svg');
+  color: var(--grey-4);
 }
 
 .accordion__content {
@@ -48,6 +46,6 @@
   padding-bottom: 0;
 }
 
-.accordion__section[open] .accordion__summary::after {
+.accordion__section[open] .accordion__arrow {
   transform: rotate(180deg);
 }
