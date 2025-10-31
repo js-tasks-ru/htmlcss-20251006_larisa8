@@ -23,7 +23,6 @@
   flex-direction: column;
   flex: 1;
   padding: 0;
-  height: 100%;
 }
 
 .page_inner {
@@ -44,5 +43,6 @@
     gap: 56px;
     margin: 0 auto;
     padding: 0 16px;
+    height: 100%;
   }
 }
