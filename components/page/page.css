@@ -26,27 +26,16 @@
   height: 100%;
 }
 
+.page_inner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background-color: var(--grey-5);
+}
+
 @media screen and (min-width: 768px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .page_inner {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    background-color: var(--grey-5);
-  }
-
-  .page__header, 
-  .page__footer {
-    flex: 0 auto;
-  }
-
   .page__preview {
     display: block;
-    flex: 1;
   }
 
   .page__container {
