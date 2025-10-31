@@ -26,8 +26,9 @@
 }
 
 .checkbox__icon {
-  display: none;
-  color: var(--white);
+  width: 15px; 
+  height: 12px; 
+  color: transparent;
 }
 
 .checkbox__input:checked ~ .checkbox__state 
@@ -38,7 +39,7 @@
 
 .checkbox__input:checked ~ .checkbox__state 
 .checkbox__icon {
-  display: block;
+  color: var(--white);
 }
 
 .checkbox__input {
