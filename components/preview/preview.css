@@ -1,5 +1,5 @@
 .preview {
-  padding: 23px 15px;
+  padding: 23px 0;
   background-color: var(--grey-5);
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
@@ -11,6 +11,6 @@
 
 @media screen and (min-width: 768px) {
   .preview {
-    padding: 68px 10px 204px;
+    padding: 68px 0 204px;
   }
 }

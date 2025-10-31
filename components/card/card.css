@@ -1,7 +1,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-height: 307px;
   padding: 0 0 10px 0;
   background-color: var(--white);
@@ -39,14 +38,12 @@
 
 @media screen and (min-width: 375px) {
   .card {
-    width: 164px;
     min-height: 210px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    width: 350px;
     min-height: 367px;
     padding: 30px 25px;
   }
