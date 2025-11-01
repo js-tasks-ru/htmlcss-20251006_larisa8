@@ -1,5 +1,5 @@
 .header {
-  padding: 96px 5px 77px;
+  padding: 96px 0 69px;
   background-color: var(--white);
   font-family: 'Inter', sans-serif;
 }
@@ -9,8 +9,20 @@
 }
 
 .header__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
   margin: 0;
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 96px 0 77px;
+  }
+
+  .header__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 64px;
+  }
 }

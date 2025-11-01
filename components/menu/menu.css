@@ -1,4 +1,5 @@
 .menu {
+  display: none;
   width: 229px;
 }
 
@@ -29,4 +30,10 @@
 .menu__link:hover,
 .menu__link:active {
   color: var(--orange);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
 }
