@@ -10,12 +10,9 @@
 }
 
 .page__preview {
-  flex: 1;
-}
-
-.page__preview {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .page__container {
