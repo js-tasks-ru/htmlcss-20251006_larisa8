@@ -2,10 +2,8 @@
   position: relative;
   display: inline-flex;
   align-items: center;
+  pointer-events: none;
   gap: 12px;
-
-  --switch-size: 24px;
-  --switch-shift: 1px;
 }
 
 .toggler__control {
@@ -32,9 +30,9 @@
 
 .toggler__switch {
   position: absolute;
-  left: var(--switch-shift);
-  width: var(--switch-size); 
-  height: var(--switch-size); 
+  transform: translateX(-50%);
+  width: 24px; 
+  height: 24px; 
   background-color: var(--grey-2);
   border-radius: 16px;
 }
@@ -48,7 +46,7 @@
 .toggler__input:checked ~ .toggler__state 
 .toggler__switch {
   background-color: var(--white);
-  left: calc(var(--switch-size) + var(--switch-shift));
+  transform: translateX(50%);
 }
 
 .toggler__input {
