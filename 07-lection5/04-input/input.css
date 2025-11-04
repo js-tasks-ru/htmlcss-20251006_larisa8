@@ -1,5 +1,9 @@
-.input__control {
+.input {
+  display: inline-block;
   position: relative;
+}
+
+.input__control {
   box-sizing: border-box;
   max-width: 350px;
   height: 56px;
@@ -15,18 +19,33 @@
   outline: none;
 }
 
-.input__control_success {
-  background: url('../../assets/images/check-circle.svg') no-repeat center right 18px;
+.input__icon_success, 
+.input__icon_invalid {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(50%);
 }
 
-.input__control_invalid {
+.input__icon_success {
+  color: var(--blue-2);
+}
+
+.input__icon_invalid {
+  color: var(--error);
+}
+
+.input_success .input__icon_success,
+.input_invalid .input__icon_invalid {
+  display: inline-block;
+}
+
+.input_invalid .input__control {
   border-color: var(--error);
 }
-
-.input__control_invalid {
-  background: url('../../assets/images/alert.svg') no-repeat center right 18px;
-}
-
 
 .input__control:focus, 
 .input__control:active {

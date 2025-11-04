@@ -6,8 +6,32 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <label class="input"><input type="text" placeholder="Placeholder" class="input__control"></label>
-        <label class="input"><input type="text" value="Success" class="input__control input__control_success"></label>
-        <label class="input"><input type="text" value="Error" class="input__control input__control_invalid"></label>
+        <div class="input">
+            <input type="text" placeholder="Placeholder" class="input__control">
+            <svg class="input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#check-circle"></use>
+            </svg>
+            <svg class="input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#alert"></use>
+            </svg>
+        </div>
+        <div class="input input_success">
+            <input type="text" value="Success" class="input__control">
+            <svg class="input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#check-circle"></use>
+            </svg>
+            <svg class="input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#alert"></use>
+            </svg>
+        </div>
+        <div class="input input_invalid">
+            <input type="text" value="Error" class="input__control">
+            <svg class="input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#check-circle"></use>
+            </svg>
+            <svg class="input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="../../assets/images/icons.svg#alert"></use>
+            </svg>
+        </div>
     </body>
 </html>
