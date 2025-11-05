@@ -1,12 +1,8 @@
 .container {
-  max-width: 1110px;
+  width: 100%;
+  max-width: 1130px;
   padding: 0 16px;
   margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.container_full-width {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
