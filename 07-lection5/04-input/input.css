@@ -3,7 +3,21 @@
   position: relative;
 }
 
+.input__label {
+  display: block;
+  margin: 0 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
 .input__control {
+  display: inline-block;
   box-sizing: border-box;
   max-width: 350px;
   height: 56px;
@@ -19,8 +33,11 @@
   outline: none;
 }
 
-.input__icon_success, 
-.input__icon_invalid {
+.input__control::placeholder {
+  color: var(--grey-2);
+}
+
+.input__icon {
   display: none;
   position: absolute;
   z-index: 1;
