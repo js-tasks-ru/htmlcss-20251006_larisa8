@@ -6,80 +6,120 @@
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body class="page">
-        <header role="banner" class="page__header header">
-            <div class="container">
-                <h1 role="heading" class="header__title">Reusable component library</h1>
-            </div>
-        </header>
-        <main role="main" class="page__preview preview">
-            <div class="container">
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card__body"></div>
-                        <div class="card__footer"><h3 class="card__title">Tooltip</h3></div>
-                    </div>
-                    <div class="card">
-                        <div class="card__body"></div>
-                        <div class="card__footer"><h3 class="card__title">Custom form elements</h3></div>
-                    </div>
-                    <div class="card">
-                        <div class="card__body"></div>
-                        <div class="card__footer"><h3 class="card__title">Calendar</h3></div>
-                    </div>
-                    <div class="card">
-                        <div class="card__body"></div>
-                        <div class="card__footer"><h3 class="card__title">Modal dialog</h3></div>
-                    </div>
-                    <div class="card">
-                        <div class="card__body">
-                            <div class="histogram">
-                                <div class="histogram__header">
-                                    <div class="histogram__title">Total orders</div>
-                                    <a class="histogram__link" href="#">View all</a>
-                                </div>
-                                <div class="histogram__count">50254</div>
-                                <div class="histogram__bars">
-                                    <div class="histogram__bar" style="height: 100%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 44%;"></div>
-                                    <div class="histogram__bar" style="height: 78%;"></div>
-                                    <div class="histogram__bar" style="height: 44%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 78%;"></div>
-                                    <div class="histogram__bar" style="height: 100%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 44%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 100%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 78%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 44%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 78%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 90%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 60%;"></div>
-                                    <div class="histogram__bar" style="height: 22%;"></div>
-                                    <div class="histogram__bar" style="height: 70%;"></div>
-                                    <div class="histogram__bar" style="height: 34%;"></div>
+        <main role="main" class="page__main">
+            <header role="banner" class="page__header header">
+                <div class="container">
+                    <h1 role="heading" class="header__title">Reusable component library</h1>
+                </div>
+            </header>
+            <section class="page__content">
+                <div class="tabs">
+                    <input class="tabs__input tabs__input_all" type="radio" name="tabs" id="#all-tab" checked>
+                    <input class="tabs__input tabs__input_complex" type="radio" name="tabs" id="#complex-tab">
+                    <input class="tabs__input tabs__input_simple" type="radio" name="tabs" id="#simple-tab">
+
+
+                    <nav class="tabs__scroller">
+                        <div class="container">
+                            <ul class="tabs__menu">
+                                <li class="tabs__item tabs__item_all"><label class="tabs__label" for="#all-tab">All components</label></li>
+                                <li class="tabs__item tabs__item_complex"><label class="tabs__label" for="#complex-tab">Complex</label></li>
+                                <li class="tabs__item tabs__item_simple"><label class="tabs__label" for="#simple-tab">Simple</label></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <section class="page__preview preview">
+                        <div class="tabs__content tabs__content_all">
+                            <!-- Все компоненты -->
+                            <div class="container">
+                                <div class="card-grid">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <div class="tooltip">
+                                                <div class="tooltip__trigger">
+                                                    <svg class="tooltip__icon" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                                                        <use href="../../assets/images/icons.svg#question"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="tooltip__bubble">Helper text</div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer"><h3 class="card__title">Tooltip</h3></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__body"></div>
+                                        <div class="card__footer"><h3 class="card__title">Custom form elements</h3></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__body"></div>
+                                        <div class="card__footer"><h3 class="card__title">Calendar</h3></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__body"></div>
+                                        <div class="card__footer"><h3 class="card__title">Modal dialog</h3></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <div class="histogram">
+                                                <div class="histogram__header">
+                                                    <div class="histogram__title">Total orders</div>
+                                                    <a class="histogram__link" href="#">View all</a>
+                                                </div>
+                                                <div class="histogram__count">50254</div>
+                                                <div class="histogram__bars">
+                                                    <div class="histogram__bar" style="height: 100%;"></div>
+                                                    <div class="histogram__bar" style="height: 70%;"></div>
+                                                    <div class="histogram__bar" style="height: 44%;"></div>
+                                                    <div class="histogram__bar" style="height: 78%;"></div>
+                                                    <div class="histogram__bar" style="height: 44%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 78%;"></div>
+                                                    <div class="histogram__bar" style="height: 100%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 44%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 70%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 100%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 78%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 44%;"></div>
+                                                    <div class="histogram__bar" style="height: 70%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 78%;"></div>
+                                                    <div class="histogram__bar" style="height: 70%;"></div>
+                                                    <div class="histogram__bar" style="height: 90%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 60%;"></div>
+                                                    <div class="histogram__bar" style="height: 22%;"></div>
+                                                    <div class="histogram__bar" style="height: 70%;"></div>
+                                                    <div class="histogram__bar" style="height: 34%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer"><h3 class="card__title">Histogram</h3></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__body"></div>
+                                        <div class="card__footer"><h3 class="card__title">Avatar</h3></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card__footer"><h3 class="card__title">Histogram</h3></div>
-                    </div>
-                    <div class="card">
-                        <div class="card__body"></div>
-                        <div class="card__footer"><h3 class="card__title">Avatar</h3></div>
-                    </div>
+                        <div class="tabs__content tabs__content_complex">
+                            <!-- Сложные компоненты -->
+                            <div class="container">Сложные компоненты</div>
+                        </div>
+                        <div class="tabs__content tabs__content_simple">
+                            <!-- Простые компоненты -->
+                            <div class="container">Простые компоненты</div>
+                        </div>
+                    </section>
                 </div>
-            </div>
+            </section>
         </main>
         <footer role="contentinfo" class="page__footer footer">
             <div class="container">

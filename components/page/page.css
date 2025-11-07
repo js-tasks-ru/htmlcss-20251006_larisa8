@@ -9,7 +9,9 @@
   flex: 0 auto;
 }
 
-.page__preview {
+.page__preview,
+.page__content,
+.page__main {
   display: flex;
   flex-direction: column;
   flex: 1;
