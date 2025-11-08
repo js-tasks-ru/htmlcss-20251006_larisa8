@@ -11,6 +11,10 @@
   letter-spacing: normal;
 }
 
+.button_width-50 {
+  width: 50%;
+}
+
 .button:not(:disabled):hover,
 .button:not(:disabled):active {
   cursor: pointer;

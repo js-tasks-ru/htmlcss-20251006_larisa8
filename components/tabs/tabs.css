@@ -16,7 +16,8 @@
 
 .tabs__input_all:checked ~ section .tabs__content_all,
 .tabs__input_complex:checked ~ section .tabs__content_complex,
-.tabs__input_simple:checked ~ section .tabs__content_simple {
+.tabs__input_simple:checked ~ section .tabs__content_simple,
+.tabs__input_organisms:checked ~ section .tabs__content_organisms {
   display: block;
 }
 
@@ -28,12 +29,14 @@
   line-height: 24px;
   color: var(--grey-3);
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .tabs__menu {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  overflow-x: scroll;
 } 
 
 .tabs__label {
@@ -51,11 +54,13 @@
   display: flex;
   align-items: center;
   border-bottom: none;
+  flex-shrink: 0;
 }
 
 .tabs__input_all:checked ~ .tabs__scroller .tabs__item_all,
 .tabs__input_simple:checked ~ .tabs__scroller .tabs__item_simple,
-.tabs__input_complex:checked ~ .tabs__scroller .tabs__item_complex {
+.tabs__input_complex:checked ~ .tabs__scroller .tabs__item_complex,
+.tabs__input_organisms:checked ~ .tabs__scroller .tabs__item_organisms {
   border-bottom: 5px solid var(--black);
   color: var(--black);
 }
