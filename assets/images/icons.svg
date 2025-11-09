@@ -14,4 +14,16 @@
   <symbol id="check">
     <path d="M1.5 7.00002L5 10.5L13 1.50002" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+  <symbol id="logo">
+    <g clip-path="url(#clip0_17869_61)">
+      <rect y="1" width="30" height="30" fill="currentColor"/>
+      <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+      <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_17869_61">
+        <rect width="110" height="32" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
 </svg>

@@ -1,5 +1,5 @@
 .header {
-  padding: 96px 0 69px;
+  padding: 16px 0;
   background-color: var(--white);
   font-family: 'Inter', sans-serif;
 }
@@ -9,20 +9,37 @@
 }
 
 .header__title {
+  margin: 16px 0 0 0;
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  margin: 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 110px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--black);
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 96px 0 77px;
+    padding: 24px 0 40px;
   }
 
   .header__title {
+    margin-top: 38px;
     font-size: 50px;
     font-weight: 500;
     line-height: 64px;
+  }
+
+  .header__inner {
+    justify-content: space-between;
   }
 }
