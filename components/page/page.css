@@ -1,6 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .page__header, 
@@ -9,7 +10,16 @@
 }
 
 .page__preview {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
 }
 
 .page_inner {
@@ -19,9 +29,17 @@
   background-color: var(--grey-5);
 }
 
-.page__container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 56px;
-  height: 100%;
+@media screen and (min-width: 768px) {
+  .page__preview {
+    display: block;
+  }
+
+  .page__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 56px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 100%;
+  }
 }

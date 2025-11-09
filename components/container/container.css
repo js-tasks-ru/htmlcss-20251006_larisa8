@@ -1,4 +1,13 @@
 .container {
-  max-width: 1110px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1130px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
 }
