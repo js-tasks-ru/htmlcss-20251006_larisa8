@@ -6,6 +6,41 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-
+        <div class="input">
+            <label class="input__label" for="label">Label</label>
+            <div class="input__control-group">
+                <input type="text" placeholder="Placeholder" class="input__control" name="label" id="label">
+                <svg class="input__icon input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#check-circle"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#alert"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="input input_success">
+            <label class="input__label" for="success">Success</label>
+            <div class="input__control-group">
+                <input type="text" value="Success" class="input__control" name="sucess" id="success">
+                <svg class="input__icon input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#check-circle"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#alert"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="input input_invalid">
+            <label class="input__label" for="error">Error</label>
+            <div class="input__control-group">
+                <input type="text" value="Error" class="input__control" name="error" id="error">
+                <svg class="input__icon input__icon_success" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#check-circle"></use>
+                </svg>
+                <svg class="input__icon input__icon_invalid" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#alert"></use>
+                </svg>
+            </div>
+        </div>
     </body>
 </html>
