@@ -18,8 +18,11 @@
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   min-height: 164px;
   pointer-events: none;
-  position: relative;
-  padding: 32px 0;
+  padding: 32px 16px;
+}
+
+.card__inner {
+  width: 100%;
 }
 
 .card__footer {
@@ -43,7 +46,7 @@
 
 .card__grid {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: 1fr;
   grid-gap: 16px;
 }
 
@@ -75,8 +78,6 @@
   }
 
   .card__grid {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

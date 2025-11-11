@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 768px) {
   .card-grid {
-    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
   }
