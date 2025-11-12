@@ -1,15 +1,15 @@
 .menu {
   width: 100%;
-  padding: 24px 0 0 0;
-  border-top: 1px solid var(--grey-2);
 }
 
 .menu__title {
+  border-top: 1px solid var(--grey-2);
   color: var(--grey-3);
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   margin: 0 0 16px 0;
+  padding: 24px 0 0 0;
 }
 
 .menu__item {
@@ -35,12 +35,13 @@
 
 @media screen and (min-width: 768px) {
   .menu {
-    padding: 0;
     width: 229px;
   }
 
   .menu__title {
+    border-top: none;
     color: var(--black-1);
+    padding: 0;
   }
 
   .menu__item {
