@@ -11,6 +11,7 @@
 @import '../../components/component/component.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../03-lection1/01-button/button.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 :root {
     --white: #ffffff;

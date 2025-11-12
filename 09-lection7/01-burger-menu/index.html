@@ -2,11 +2,53 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <div class="burger-menu">
+            <button class="burger-menu__button" id="burger-menu-open">
+                <svg class="burger-menu__button-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="burger-menu__panel" id="burger-menu">
+                <header class="burger-menu__header">  
+                    <svg class="header__logo" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/icons.svg#logo"></use>
+                    </svg>
+                </header>
+                <button class="burger-menu__button burger-menu__button_close" id="burger-menu-close">
+                    <svg class="burger-menu__button-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/icons.svg#close_md"></use>
+                    </svg>
+                </button>
+                <div class="burger-menu__mode">
+                    <label class="toggler toggler_grow">
+                        <input type="checkbox" class="toggler__input">
+                        <div class="toggler__state toggler__state_flex">
+                            <div class="toggler__label toggler__label_grow">Dark mode</div>
+                            <div class="toggler__control">
+                                <div class="toggler__switch"></div>
+                            </div> 
+                        </div>
+                    </label>
+                </div>
+                <nav class="menu">
+                    <h4 class="menu__title">Components</h4>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Modal</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Tooltip</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Avatar</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Calendar</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Histogram</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Custom form elements</a></li>
+                        <li class="menu__item menu__item_bottom"><a href="#" class="menu__link">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </body>
 </html>
