@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+.calendar_preview {
+  width: 200px;
+  max-width: 100%;
+}
+
 .calendar__wrapper {
   position: relative;
   padding-bottom: 100%;
@@ -44,6 +49,14 @@
   line-height: 20px;
   color: var(--grey-7);
   cursor: pointer;
+}
+
+.calendar_preview .calendar__cell {
+  font-size: 9px;
+}
+
+.calendar_preview .calendar__title {
+  font-size: 14px;
 }
 
 .calendar__cell_day {

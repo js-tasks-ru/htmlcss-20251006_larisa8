@@ -1,0 +1,75 @@
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__input {
+  position: absolute;
+  left: -100vw;
+}
+
+.tabs__input_all:checked ~ section .tabs__content_all,
+.tabs__input_complex:checked ~ section .tabs__content_complex,
+.tabs__input_simple:checked ~ section .tabs__content_simple,
+.tabs__input_organisms:checked ~ section .tabs__content_organisms {
+  display: block;
+}
+
+.tabs__scroller {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.tabs__menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  overflow-x: auto;
+} 
+
+.tabs__label {
+  padding: 0 0 13px 0;
+  cursor: pointer;
+}
+
+.tabs__label:active,
+.tabs__label:focus,
+.tabs__label:hover {
+  color: var(--black);
+}
+
+.tabs__item {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  flex-shrink: 0;
+}
+
+.tabs__input_all:checked ~ .tabs__scroller .tabs__item_all,
+.tabs__input_simple:checked ~ .tabs__scroller .tabs__item_simple,
+.tabs__input_complex:checked ~ .tabs__scroller .tabs__item_complex,
+.tabs__input_organisms:checked ~ .tabs__scroller .tabs__item_organisms {
+  border-bottom: 5px solid var(--black);
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .tabs__menu {
+    gap: 40px;
+  } 
+}
+
+
+
