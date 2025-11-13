@@ -2,11 +2,46 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <header class="header header_transparent">
+            <div class="container">
+                <button class="header__menu-btn" id="burger-menu-open" aria-expanded="false" aria-controls="burger-menu">
+                    <svg class="header__menu-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/icons.svg#menu"></use>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <div class="burger-menu" id="burger-menu" aria-hidden="true">
+            <div class="burger-menu__panel">
+                <header class="burger-menu__header">  
+                    <svg class="header__logo" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/icons.svg#logo"></use>
+                    </svg>
+                </header>
+                <button class="burger-menu__button burger-menu__button_close" id="burger-menu-close">
+                    <svg class="burger-menu__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/icons.svg#close_md"></use>
+                    </svg>
+                </button>
+                <nav class="menu">
+                    <h4 class="menu__title">Components</h4>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Modal</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Tooltip</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Avatar</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Calendar</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Histogram</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Custom form elements</a></li>
+                        <li class="menu__item menu__item_bottom"><a href="#" class="menu__link">Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,21 +1,22 @@
 .menu {
-  display: none;
-  width: 229px;
+  width: 100%;
 }
 
 .menu__title {
-  color: var(--black-1);
+  border-top: 1px solid var(--grey-2);
+  color: var(--grey-3);
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   margin: 0 0 16px 0;
+  padding: 24px 0 0 0;
 }
 
 .menu__item {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  margin: 0 0 4px 0;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px 0;
 }
 
 .menu__item_bottom {
@@ -34,6 +35,18 @@
 
 @media screen and (min-width: 768px) {
   .menu {
-    display: block;
+    width: 229px;
+  }
+
+  .menu__title {
+    border-top: none;
+    color: var(--black-1);
+    padding: 0;
+  }
+
+  .menu__item {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
