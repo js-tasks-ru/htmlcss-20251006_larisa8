@@ -17,9 +17,9 @@ if (menuClose) {
     menuClose.addEventListener('click', function() {
         if (menu) {
             menu.removeAttribute('data-open');
+            menuOpen.focus();
             menu.setAttribute('aria-hidden', true);
             menuOpen.setAttribute('aria-expanded', false); 
-            menuOpen.focus();
         }
     });
 }
