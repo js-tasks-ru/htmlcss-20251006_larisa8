@@ -1,17 +1,9 @@
-.toggler_grow {
-  flex: 1;
-}
-
 .toggler__state {
   position: relative;
   display: inline-flex;
   align-items: center;
   pointer-events: none;
   gap: 12px;
-}
-
-.toggler__state_flex {
-  display: flex;
 }
 
 .toggler__control {
@@ -34,10 +26,6 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--grey-4);
-}
-
-.toggler__label_grow {
-  flex: 1;
 }
 
 .toggler__switch {
