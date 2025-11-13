@@ -1,4 +1,5 @@
 .burger-menu {
+  inset: 0;
   display: block;
   pointer-events: none;
   position: fixed;

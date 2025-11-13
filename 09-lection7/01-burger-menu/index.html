@@ -10,14 +10,14 @@
     <body>
         <header class="header header_transparent">
             <div class="container">
-                <button class="header__menu-btn" id="burger-menu-open">
+                <button class="header__menu-btn" id="burger-menu-open" aria-expanded="false" aria-controls="burger-menu">
                     <svg class="header__menu-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use href="../../assets/images/icons.svg#menu"></use>
                     </svg>
                 </button>
             </div>
         </header>
-        <div class="burger-menu" id="burger-menu">
+        <div class="burger-menu" id="burger-menu" aria-hidden="true">
             <div class="burger-menu__panel">
                 <header class="burger-menu__header">  
                     <svg class="header__logo" fill="none" xmlns="http://www.w3.org/2000/svg">
