@@ -37,13 +37,13 @@
                 <nav class="menu">
                     <h4 class="menu__title">Components</h4>
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Modal</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Tooltip</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Avatar</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Calendar</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Histogram</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Custom form elements</a></li>
-                        <li class="menu__item menu__item_bottom"><a href="#" class="menu__link">Main page</a></li>
+                        <li class="menu__item"><a href="./modal.html" class="menu__link">Modal</a></li>
+                        <li class="menu__item"><a href="./tooltip.html" class="menu__link">Tooltip</a></li>
+                        <li class="menu__item"><a href="./avatar.html" class="menu__link">Avatar</a></li>
+                        <li class="menu__item"><a href="./calendar.html" class="menu__link">Calendar</a></li>
+                        <li class="menu__item"><a href="./histogram.html" class="menu__link">Histogram</a></li>
+                        <li class="menu__item"><a href="./custom-form-elements.html" class="menu__link">Custom form elements</a></li>
+                        <li class="menu__item menu__item_bottom"><a href="../index.html" class="menu__link">Main page</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,7 +63,219 @@
                     </ul>
                 </nav>
                 <article class="component">
-                    <h4 class="component__title">Calendar</h4>
+                    <div class="component__wrapper">
+                        <h4 class="component__title">Calendar</h4>
+                        <div class="component__content">
+                            <div class="calendar">
+                                <div class="calendar__title">October 2019</div>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__cell calendar__cell_day">Mon</span>
+                                        <span class="calendar__cell calendar__cell_day">Tue</span>
+                                        <span class="calendar__cell calendar__cell_day">Wed</span>
+                                        <span class="calendar__cell calendar__cell_day">Thu</span>
+                                        <span class="calendar__cell calendar__cell_day">Fri</span>
+                                        <span class="calendar__cell calendar__cell_day">Sat</span>
+                                        <span class="calendar__cell calendar__cell_day">Sun</span>
+                                        <span class="calendar__cell"></span>
+                                        <span class="calendar__cell"></span>
+                                        <span class="calendar__cell"></span>
+                                        <span class="calendar__cell"></span>
+                                        <span class="calendar__cell"></span>
+                                        <span class="calendar__cell">1</span>
+                                        <span class="calendar__cell">2</span>
+                                        <span class="calendar__cell">3</span>
+                                        <span class="calendar__cell">4</span>
+                                        <span class="calendar__cell">5</span>
+                                        <span class="calendar__cell">6</span>
+                                        <span class="calendar__cell">7</span>
+                                        <span class="calendar__cell">8</span>
+                                        <span class="calendar__cell">9</span>
+                                        <span class="calendar__cell">10</span>
+                                        <span class="calendar__cell">11</span>
+                                        <span class="calendar__cell">12</span>
+                                        <span class="calendar__cell">13</span>
+                                        <span class="calendar__cell">14</span>
+                                        <span class="calendar__cell">15</span>
+                                        <span class="calendar__cell">16</span>
+                                        <span class="calendar__cell">17</span>
+                                        <span class="calendar__cell calendar__cell_selected-from">18</span>
+                                        <span class="calendar__cell calendar__cell_selected-between">19</span>
+                                        <span class="calendar__cell calendar__cell_selected-between">20</span>
+                                        <span class="calendar__cell calendar__cell_selected-between">21</span>
+                                        <span class="calendar__cell calendar__cell_selected-between">22</span>
+                                        <span class="calendar__cell calendar__cell_selected-to">23</span>
+                                        <span class="calendar__cell">24</span>
+                                        <span class="calendar__cell">25</span>
+                                        <span class="calendar__cell">26</span>
+                                        <span class="calendar__cell">27</span>
+                                        <span class="calendar__cell">28</span>
+                                        <span class="calendar__cell">29</span>
+                                        <span class="calendar__cell">30</span>
+                                        <span class="calendar__cell">31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <input class="tabs__input tabs__input_html" type="radio" name="tabs" id="#html-tab" checked>
+                        <input class="tabs__input tabs__input_css" type="radio" name="tabs" id="#css-tab">
+                        
+                        <nav class="tabs__scroller component__wrapper">
+                            <div class="container">
+                                <ul class="tabs__menu">
+                                    <li class="tabs__item tabs__item_html"><label class="tabs__label" for="#html-tab">HTML</label></li>
+                                    <li class="tabs__item tabs__item_css"><label class="tabs__label" for="#css-tab">CSS</label></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <section class="tabs__section">
+                            <div class="tabs__divider"></div>
+                            <div class="tabs__content tabs__content_html">
+                                <div class="tabs__inner component__wrapper">
+                                    <pre>
+&lt;div class=&quot;calendar&quot;&gt;
+    &lt;div class=&quot;calendar__title&quot;&gt;October 2019&lt;/div&gt;
+    &lt;div class=&quot;calendar__wrapper&quot;&gt;
+        &lt;div class=&quot;calendar__inner&quot;&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Mon&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Tue&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Wed&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Thu&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Fri&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Sat&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_day&quot;&gt;Sun&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;2&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;3&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;4&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;5&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;6&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;7&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;8&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;9&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;10&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;11&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;12&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;13&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;14&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;15&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;16&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;17&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-from&quot;&gt;18&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-between&quot;&gt;19&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-between&quot;&gt;20&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-between&quot;&gt;21&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-between&quot;&gt;22&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell calendar__cell_selected-to&quot;&gt;23&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;24&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;25&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;26&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;27&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;28&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;29&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;30&lt;/span&gt;
+            &lt;span class=&quot;calendar__cell&quot;&gt;31&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+                                <div class="tabs__inner component__wrapper">
+                                        <pre>
+.calendar {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 16px;
+  padding: 28px 30px 40px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  max-width: 304px;
+  width: 100%;
+}
+
+.calendar_preview {
+  width: 200px;
+  max-width: 100%;
+}
+
+.calendar__wrapper {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);  
+}
+
+.calendar__title {
+  margin: 0 0 24px 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--grey-7);
+  text-align: center;
+}
+
+.calendar__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey-7);
+  cursor: pointer;
+}
+
+.calendar_preview .calendar__cell {
+  font-size: 9px;
+}
+
+.calendar_preview .calendar__title {
+  font-size: 14px;
+}
+
+.calendar__cell_day {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grey-8);
+  cursor: auto;
+}
+
+.calendar__cell_selected-between {
+  background-color:rgba(160, 177, 245, 0.2);
+}
+
+.calendar__cell_selected-from,
+.calendar__cell_selected-to {
+  color: var(--white);
+  background: var(--blue-2);
+}
+                                        </pre>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </article>
             </div>
         </main>

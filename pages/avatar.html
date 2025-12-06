@@ -37,13 +37,13 @@
                 <nav class="menu">
                     <h4 class="menu__title">Components</h4>
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Modal</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Tooltip</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Avatar</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Calendar</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Histogram</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Custom form elements</a></li>
-                        <li class="menu__item menu__item_bottom"><a href="#" class="menu__link">Main page</a></li>
+                        <li class="menu__item"><a href="./modal.html" class="menu__link">Modal</a></li>
+                        <li class="menu__item"><a href="./tooltip.html" class="menu__link">Tooltip</a></li>
+                        <li class="menu__item"><a href="./avatar.html" class="menu__link">Avatar</a></li>
+                        <li class="menu__item"><a href="./calendar.html" class="menu__link">Calendar</a></li>
+                        <li class="menu__item"><a href="./histogram.html" class="menu__link">Histogram</a></li>
+                        <li class="menu__item"><a href="./custom-form-elements.html" class="menu__link">Custom form elements</a></li>
+                        <li class="menu__item menu__item_bottom"><a href="../index.html" class="menu__link">Main page</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,7 +63,57 @@
                     </ul>
                 </nav>
                 <article class="component">
-                    <h4 class="component__title">Avatar</h4>
+                    <div class="component__wrapper">
+                        <h4 class="component__title">Avatar</h4>
+                        <div class="component__content">
+                            <div class="avatar">
+                                <img src="../06-lection4/01-avatar/public/avatar-200.jpg" class="avatar__img" alt="avatar-200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <input class="tabs__input tabs__input_html" type="radio" name="tabs" id="#html-tab" checked>
+                        <input class="tabs__input tabs__input_css" type="radio" name="tabs" id="#css-tab">
+                        
+                        <nav class="tabs__scroller component__wrapper">
+                            <div class="container">
+                                <ul class="tabs__menu">
+                                    <li class="tabs__item tabs__item_html"><label class="tabs__label" for="#html-tab">HTML</label></li>
+                                    <li class="tabs__item tabs__item_css"><label class="tabs__label" for="#css-tab">CSS</label></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <section class="tabs__section">
+                            <div class="tabs__divider"></div>
+                            <div class="tabs__content tabs__content_html">
+                                <div class="tabs__inner component__wrapper">
+                                    <pre>
+ &lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;./public/avatar-200.jpg&quot; class=&quot;avatar__img&quot; alt=&quot;avatar-200&quot;&gt;
+ &lt;/div&gt;
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+                                <div class="tabs__inner component__wrapper">
+                                        <pre>
+.avatar {
+  width: 102px;
+  height: 102px;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+                                        </pre>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </article>
             </div>
         </main>
