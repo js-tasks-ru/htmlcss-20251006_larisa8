@@ -20,6 +20,7 @@
 @import '../../07-lection5/02-radio/radio.css';
 @import '../../07-lection5/01-checkbox/checkbox.css';
 @import '../../05-lection3/03-calendar/calendar.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
 
 :root {
     --white: #ffffff;

@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.menu_desktop {
+  display: none;
+}
+
 .menu__title {
   border-top: 1px solid var(--grey-2);
   color: var(--grey-3);
@@ -36,6 +40,10 @@
 @media screen and (min-width: 768px) {
   .menu {
     width: 229px;
+  }
+
+  .menu_desktop {
+    display: block;
   }
 
   .menu__title {
