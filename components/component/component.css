@@ -24,10 +24,6 @@
   padding: 0 0 32px 0;
 }
 
-.component_tooltip {
-  margin: 70px 0 30px 70px;
-}
-
 @media screen and (min-width: 768px) {
   .component {
     background-color: var(--white);

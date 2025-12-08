@@ -28,6 +28,9 @@
 .tabs__input_css:checked ~ section .tabs__content_css,
 .tabs__input_js:checked ~ section .tabs__content_js {
   display: flex;
+}
+
+.tabs__content {
   flex-direction: column;
   flex: 1;
 }
@@ -64,7 +67,7 @@
 }
 
 .tabs__inner {
-  margin: 22px 0 32px 0;
+  padding: 22px 0 32px 0;
   overflow-x: auto;
   flex: 1;
 }

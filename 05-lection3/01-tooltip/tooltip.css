@@ -4,6 +4,10 @@
   --arrow-size: 6px;
 }
 
+.tooltip_with-margin {
+  margin: 70px 0 30px 70px;
+}
+
 .tooltip__icon {
   width: 24px;
   height: 24px;
