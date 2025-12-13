@@ -20,13 +20,13 @@
   left: -100vw;
 }
 
-.tabs__input_all:checked ~ section .tabs__content_all,
-.tabs__input_complex:checked ~ section .tabs__content_complex,
-.tabs__input_simple:checked ~ section .tabs__content_simple,
-.tabs__input_organisms:checked ~ section .tabs__content_organisms,
-.tabs__input_html:checked ~ section .tabs__content_html,
-.tabs__input_css:checked ~ section .tabs__content_css,
-.tabs__input_js:checked ~ section .tabs__content_js {
+.tabs__input_all:checked ~ .tabs__section .tabs__content_all,
+.tabs__input_complex:checked ~ .tabs__section .tabs__content_complex,
+.tabs__input_simple:checked ~ .tabs__section .tabs__content_simple,
+.tabs__input_organisms:checked ~ .tabs__section .tabs__content_organisms,
+.tabs__input_html:checked ~ .tabs__section .tabs__content_html,
+.tabs__input_css:checked ~ .tabs__section .tabs__content_css,
+.tabs__input_js:checked ~ .tabs__section .tabs__content_js {
   display: flex;
 }
 
@@ -67,7 +67,8 @@
 }
 
 .tabs__inner {
-  padding: 22px 0 32px 0;
+  padding-top: 22px;
+  padding-bottom: 32px;
   overflow-x: auto;
   flex: 1;
 }
@@ -102,7 +103,8 @@
   } 
 
   .tabs__inner {
-    margin: 50px 0 32px 0;
+    padding-top: 50px;
+    padding-bottom: 32px;
     overflow-x: auto;
   }
 }
