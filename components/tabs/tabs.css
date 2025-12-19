@@ -3,10 +3,16 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .tabs__content {
   display: none;
+}
+
+.tabs__divider {
+  border-top: 1px solid var(--grey-2);
 }
 
 .tabs__input {
@@ -14,14 +20,24 @@
   left: -100vw;
 }
 
-.tabs__input_all:checked ~ section .tabs__content_all,
-.tabs__input_complex:checked ~ section .tabs__content_complex,
-.tabs__input_simple:checked ~ section .tabs__content_simple,
-.tabs__input_organisms:checked ~ section .tabs__content_organisms {
-  display: block;
+.tabs__input_all:checked ~ .tabs__section .tabs__content_all,
+.tabs__input_complex:checked ~ .tabs__section .tabs__content_complex,
+.tabs__input_simple:checked ~ .tabs__section .tabs__content_simple,
+.tabs__input_organisms:checked ~ .tabs__section .tabs__content_organisms,
+.tabs__input_html:checked ~ .tabs__section .tabs__content_html,
+.tabs__input_css:checked ~ .tabs__section .tabs__content_css,
+.tabs__input_js:checked ~ .tabs__section .tabs__content_js {
+  display: flex;
+}
+
+.tabs__content {
+  flex-direction: column;
+  flex: 1;
 }
 
 .tabs__scroller {
+  flex: 0 auto;
+  position: relative;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,6 +46,12 @@
   color: var(--grey-3);
   background-color: var(--white);
   overflow: hidden;
+}
+
+.tabs__section {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
 }
 
 .tabs__menu {
@@ -42,6 +64,13 @@
 .tabs__label {
   padding: 0 0 13px 0;
   cursor: pointer;
+}
+
+.tabs__inner {
+  padding-top: 22px;
+  padding-bottom: 32px;
+  overflow-x: auto;
+  flex: 1;
 }
 
 .tabs__label:active,
@@ -60,7 +89,10 @@
 .tabs__input_all:checked ~ .tabs__scroller .tabs__item_all,
 .tabs__input_simple:checked ~ .tabs__scroller .tabs__item_simple,
 .tabs__input_complex:checked ~ .tabs__scroller .tabs__item_complex,
-.tabs__input_organisms:checked ~ .tabs__scroller .tabs__item_organisms {
+.tabs__input_organisms:checked ~ .tabs__scroller .tabs__item_organisms,
+.tabs__input_html:checked ~ .tabs__scroller .tabs__item_html,
+.tabs__input_css:checked ~ .tabs__scroller .tabs__item_css,
+.tabs__input_js:checked ~ .tabs__scroller .tabs__item_js {
   border-bottom: 5px solid var(--black);
   color: var(--black);
 }
@@ -69,6 +101,12 @@
   .tabs__menu {
     gap: 40px;
   } 
+
+  .tabs__inner {
+    padding-top: 50px;
+    padding-bottom: 32px;
+    overflow-x: auto;
+  }
 }
 
 

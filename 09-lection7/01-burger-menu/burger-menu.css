@@ -10,6 +10,7 @@
   color: var(--black);
   opacity: 0;
   transition: opacity 0.3s;
+  z-index: 1000;
 }
 
 .burger-menu__button {
@@ -45,7 +46,7 @@
 .burger-menu__panel {
   height: 100vh;
   background-color: var(--white);
-  padding: 12px 16px;
+  padding: 16px;
 }
 
 .burger-menu[data-open] {

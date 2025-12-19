@@ -1,8 +1,21 @@
 .component {
   background-color: var(--white);
-  padding: 32px 16px;
+  padding: 32px 0;
   font-family: 'Inter', sans-serif;
   flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.component__wrapper {
+  padding: 0 16px;
+} 
+
+.component__column-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .component__title {
@@ -13,12 +26,24 @@
   color: var(--grey-4);
 }
 
+.component__content {
+  padding: 0 0 32px 0;
+}
+
 @media screen and (min-width: 768px) {
   .component {
     background-color: var(--white);
     box-shadow: 0px 2px 4px 0px #2124290D;
     border-radius: 16px;
-    padding: 32px 48px;
+  }
+
+  .component__wrapper {
+    padding: 0 48px;
+  }
+
+  .component__column-preview {
+    grid-template-columns: 100px 1fr;
+    gap: 16px 40px;
   }
 
   .component__title {

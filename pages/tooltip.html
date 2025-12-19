@@ -20,7 +20,6 @@
                         </svg>
                     </a>
                 </div>
-            </div>
         </header>
         <div class="burger-menu" id="burger-menu" aria-hidden="true">
             <div class="burger-menu__panel">
@@ -64,7 +63,105 @@
                 </nav>
                 <article class="component">
                     <div class="component__wrapper">
-                        <h4 class="component__title">Content title</h4>
+                        <h4 class="component__title">Tooltip</h4>
+                        <div class="component__content">
+                            <div class="tooltip" style="margin: 70px 0 30px 70px;">
+                                <div class="tooltip__trigger">
+                                    <svg class="tooltip__icon" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                                        <use href="../../assets/images/icons.svg#question"></use>
+                                    </svg>
+                                </div>
+                                <div class="tooltip__bubble">Helper text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <input class="tabs__input tabs__input_html" type="radio" name="tabs" id="#html-tab" checked>
+                        <input class="tabs__input tabs__input_css" type="radio" name="tabs" id="#css-tab">
+                        
+                        <nav class="tabs__scroller component__wrapper">
+                            <div class="container">
+                                <ul class="tabs__menu">
+                                    <li class="tabs__item tabs__item_html"><label class="tabs__label" for="#html-tab">HTML</label></li>
+                                    <li class="tabs__item tabs__item_css"><label class="tabs__label" for="#css-tab">CSS</label></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <section class="tabs__section">
+                            <div class="tabs__divider"></div>
+                            <div class="tabs__content tabs__content_html">
+                                <div class="tabs__inner component__wrapper">
+                                    <pre>
+&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;tooltip__trigger&quot;&gt;
+        &lt;svg class=&quot;tooltip__icon&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot; fill=&quot;none&quot;&gt;
+            &lt;use href=&quot;../../assets/images/icons.svg#question&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tooltip__bubble&quot;&gt;Helper text&lt;/div&gt;
+&lt;/div&gt;
+                                    </pre>
+                                </div>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+                                <div class="tabs__inner component__wrapper">
+                                        <pre>
+.tooltip {
+  display: inline-block;
+  position: relative;
+  --arrow-size: 6px;
+}
+
+.tooltip__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
+.tooltip__trigger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip__bubble {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + var(--arrow-size));
+  left: 50%;
+  transform: translateX(-50%);
+  width: 129px;
+  padding: 13px 21px 8px;
+  background: var(--blue-2);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px #2124290D;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--grey-2)
+}
+
+.tooltip__bubble::before {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top: var(--arrow-size) solid var(--blue-2);
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble {
+  display: block;
+}
+                                        </pre>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </article>
             </div>
