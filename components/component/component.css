@@ -12,6 +12,12 @@
   padding: 0 16px;
 } 
 
+.component__column-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
 .component__title {
   margin: 0 0 24px 0;
   font-weight: 400;
@@ -33,6 +39,11 @@
 
   .component__wrapper {
     padding: 0 48px;
+  }
+
+  .component__column-preview {
+    grid-template-columns: 100px 1fr;
+    gap: 16px 40px;
   }
 
   .component__title {
