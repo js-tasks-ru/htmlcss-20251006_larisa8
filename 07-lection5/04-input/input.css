@@ -37,6 +37,11 @@
   outline: none;
 }
 
+.input__control:hover {
+  transition: border 1s linear;
+  border: 1px solid var(--blue-2);
+}
+
 .input__control::placeholder {
   color: var(--grey-2);
 }
