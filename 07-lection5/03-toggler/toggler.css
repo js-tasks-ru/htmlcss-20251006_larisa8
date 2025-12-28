@@ -8,6 +8,7 @@
 
 .toggler__control {
   position: relative;
+  transition: background 0.3s ease-out;
   background: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
@@ -31,6 +32,7 @@
 .toggler__switch {
   position: absolute;
   transform: translateX(-50%);
+  transition: transform 0.1s linear;
   width: 24px; 
   height: 24px; 
   background-color: var(--grey-2);

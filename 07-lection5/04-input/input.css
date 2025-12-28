@@ -32,9 +32,16 @@
   font-size: 20px;
   line-height: 26px;
   color: var(--grey-4);
-  border: 1px solid var(--grey-2);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: var(--grey-2);
   border-radius: 16px;
-  outline: none;
+  border: none;
+}
+
+.input__control:hover {
+  transition: outline 1s linear;
+  outline-color: var(--blue-2);
 }
 
 .input__control::placeholder {
@@ -66,10 +73,10 @@
 }
 
 .input_invalid .input__control {
-  border-color: var(--error);
+  outline-color: var(--error);
 }
 
 .input__control:focus, 
 .input__control:active {
-  border-color: var(--blue-2);
+  outline-color: var(--blue-2);
 }
