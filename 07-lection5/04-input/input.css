@@ -38,7 +38,7 @@
 }
 
 .input__control:hover {
-  transition: border 1s linear;
+  transition: border-сolor 0.5s linear;
   border: 1px solid var(--blue-2);
 }
 
